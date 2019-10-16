@@ -1,0 +1,24 @@
+<div class="tab">
+    <button class="tablinks" id="firstTab" (click)="openTab($event, 'firstTabContent')">SETTING</button>
+    <button class="tablinks" id="secondTab" (click)="openTab($event, 'secondTabContent')">LOAD</button>
+    <button class="tablinks" id="thirdTab" (click)="openTab($event, 'thirdTabContent')">ANNOTATION</button>
+    <button class="tablinks" id="fourthTab" (click)="openTab($event, 'fourthTabContent')">MODEL UPDATE</button>
+    <button class="tablinks" id="fifthTab" (click)="openTab($event, 'fifthTabContent')">EXTRACT</button>
+</div>
+
+<div id="firstTabContent" class="tabcontent">
+    <app-setting-screen></app-setting-screen>
+</div>
+<div id="secondTabContent" class="tabcontent">
+    <app-load-screen (selectedFilesExport)="selectedFile = $event"></app-load-screen>
+</div>
+<div id="thirdTabContent" class="tabcontent">
+    <app-annotation-screen [selectedFiles]="selectedFile"></app-annotation-screen>
+</div>
+<div id="fourthTabContent" class="tabcontent">
+    <app-model-update-screen [isShownImage]="isShownImage"></app-model-update-screen>
+</div>
+<div id="fifthTabContent" class="tabcontent">
+    <!-- <app-extract-screen></app-extract-screen> -->
+    <app-test-paperjs></app-test-paperjs>
+</div>

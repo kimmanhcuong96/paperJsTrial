@@ -1,0 +1,44 @@
+button {
+  cursor: pointer;
+}
+
+#import-file {
+  display: flex;
+  margin: 10px 0px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 5px 10px;
+  min-width: 420px;
+  text-align: center;
+}
+
+input {
+  cursor: pointer;
+  border: 1px solid gray;
+  border-radius: 3px;
+  padding: 2px;
+}
+
+tbody {
+  max-height: 400px;
+  //   width: 400px;
+  overflow-y: auto; /* Trigger vertical scroll    */
+  overflow-x: auto; /* Hide the horizontal scroll */
+}
+
+thead,
+tbody {
+  display: block;
+}
+
+#view-select-file {
+    margin: 15px 0px;
+}

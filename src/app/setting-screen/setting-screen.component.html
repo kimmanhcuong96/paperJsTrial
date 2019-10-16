@@ -1,0 +1,46 @@
+<p>setting-screen works!</p>
+<div id="setting-screen">
+    <div class="sup-container">
+        <table>
+            <tr>
+                <td>GPU</td>
+                <td>
+                    <select>
+                        <option *ngFor="let opp of GPUOptions" [value]="opp.value">{{opp.name}}</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Pretrained Model</td>
+                <td>
+                    <select>
+                        <option *ngFor="let opp of PreTrainedModeloptions" [value]="opp.value">{{opp.name}}</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Model</td>
+                <td>
+                    <select>
+                        <option *ngFor="let opp of ModelOptions" [value]="opp.value">{{opp.name}}</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Number of Epochs</td>
+                <td>
+                    <input type="number" [value]="epochValue" (change)="epochValue = $event.target.value" />
+                </td>
+            </tr>
+            <tr>
+                <td>batch size</td>
+                <td>
+                    <input type="number" [value]="batchSize" (change)="batchSize = $event.target.value"/>
+                </td>
+            </tr>
+        </table>
+        <div id="save-button">
+            <button (click)="doSave()">Save</button>
+        </div>
+    </div>
+</div>

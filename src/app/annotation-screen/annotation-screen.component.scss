@@ -1,0 +1,84 @@
+#main-container {
+  display: flex;
+}
+
+#tool-zone {
+  width: 15%;
+  min-width: 100px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#current-image {
+  padding: 10px;
+  width: 60%;
+  min-width: 400px;
+  //   max-width: 1000px;
+  overflow: auto;
+  max-height: 700px;
+  text-align: center;
+  vertical-align: middle;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+}
+
+#current-image img {
+  margin-top: auto;
+  margin-bottom: auto;
+//   display: block;
+//   margin-left: auto;
+//   margin-right: auto;
+//   width: 50%;
+}
+
+#list-image {
+  margin-left: 25px;
+  width: 30%;
+  min-width: 220px;
+}
+
+#list-image table,
+#list-image th,
+#list-image td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+#list-image td {
+  padding: 5px 10px;
+  min-width: 420px;
+  text-align: center;
+}
+
+#list-image tbody {
+  max-height: 400px;
+  //   width: 400px;
+  overflow-y: auto; /* Trigger vertical scroll    */
+  overflow-x: auto; /* Hide the horizontal scroll */
+}
+
+#list-image thead,
+#list-image tbody {
+  display: block;
+}
+
+#view-select-file {
+  margin: 15px 0px;
+}
+
+.image-name {
+  cursor: pointer;
+}
+
+.image-name:hover {
+  color: blue;
+}
+
+.image-name:active {
+  color: red;
+}
+
+.image-name:visited {
+  color: #ba252a;
+}

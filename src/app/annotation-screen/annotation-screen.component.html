@@ -1,0 +1,29 @@
+<div id="annotation-screen">
+    <div id="main-container">
+        <div id="tool-zone">this's tool zone
+            <div *ngIf="TOOL_ICONS && TOOL_ICONS.length > 0" id="list-tool-icon">
+                <table>
+                    <tbody>
+                        <tr *ngFor="let toolImage of TOOL_ICONS">
+                            <td> <img [src]="BASE_URL + toolImage" alt="image can't show"> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="current-image">
+            <img [src]="url" alt="image can't show" *ngIf="url">
+        </div>
+        <div id="list-image">
+            <div *ngIf="_selectedFiles && _selectedFiles.length > 0" id="view-select-file">
+                <table>
+                    <tbody>
+                        <tr *ngFor="let file of _selectedFiles">
+                            <td> <a class="image-name" (click)='onImageNameClick(file.name)'>{{file.name}}</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

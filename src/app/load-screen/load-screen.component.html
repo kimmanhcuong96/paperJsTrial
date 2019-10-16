@@ -1,0 +1,21 @@
+<div id="load-screen">
+    <div id="main-container">
+        <div id="import-file">
+            <div style="width: 500px;">Select images:
+                <input type="file" name="myFile" multiple (change)="fileChanged($event)" accept="image/*"/>
+            </div>
+            <div>
+                <button>Submit</button>
+            </div>
+        </div>
+        <div *ngIf="selectedFiles && selectedFiles.length > 0" id="view-select-file">
+            <table>
+                <tbody>
+                    <tr *ngFor="let file of selectedFiles">
+                        <td>{{file.name}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

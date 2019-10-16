@@ -1,0 +1,44 @@
+#setting-screen .sup-container {
+    // display: flex;
+    // justify-content: flex-start;
+    padding: 15px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 15px;
+}
+
+table {
+  width: 100%;
+  max-width: 500px;
+}
+
+td:first-child{
+    text-align: right;
+}
+
+select{
+    min-width: 100px;
+    padding: 5px 10px;
+}
+
+input {
+    max-width: 50px;
+    padding: 5px 10px;
+}
+
+#save-button{
+    margin: 10px 0px;
+}
+
+button{
+    cursor: pointer;
+}

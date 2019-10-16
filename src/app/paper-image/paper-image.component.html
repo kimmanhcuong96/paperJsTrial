@@ -1,0 +1,7 @@
+<p>paper-image works!</p>
+<img #img id='target-image' [src]="BASE_URL + imageName" alt="image can't show" (load)="verifyLoadedImage(img)"
+    [attr.width]="targetImageWidth ? currentImageWidth : null"
+    [attr.height]="targetImageHeight ? currentImageHeight : null" (click)="resizeDemo()">
+<div style="width: 400px; height: 400px; overflow: auto">
+    <canvas resize="true" id="cv-image" style="border: 1px solid gray;" (click)="resizeDemo()"></canvas>
+</div>
